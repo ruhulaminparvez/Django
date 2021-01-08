@@ -5,7 +5,7 @@ Django 3 Full Stack Websites with Python Web Development ❄🗽
 
 ## Password Generator
 
-A simple **Password Generator** Webiste.
+A simple **Password Generator** website, which creates random passwords based on various conditions.
 
 #### Preview 👇
 
