@@ -9,5 +9,5 @@ A simple **Password Generator** Webiste.
 
 #### Preview 👇
 
-<img width="550" src="https://github.com/Ruhul12/Django/blob/main/gif_previews/password_generator.gif">
+<img width="650" src="https://github.com/Ruhul12/Django/blob/main/gif_previews/password_generator.gif">
 
