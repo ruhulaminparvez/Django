@@ -7,7 +7,7 @@ Django 3 Full Stack Websites with Python Web Development ❄🗽
 
 A simple **Password Generator** Webiste.
 
-### Preview 👇
+#### Preview 👇
 
-<img src="https://github.com/Ruhul12/Django/blob/main/gif_previews/password_generator.gif">
+<img width="550" src="https://github.com/Ruhul12/Django/blob/main/gif_previews/password_generator.gif">
 
