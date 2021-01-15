@@ -2,7 +2,7 @@
 Django 3 Full Stack Websites with Python Web Development ❄🗽
 
 - [Password Generator](#password-generator)
-- [Personal Portfolio](#personal-portfolio)
+- [Personal Portfolio](#personal-portfoilo)
 
 ## Password Generator
 
