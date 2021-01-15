@@ -7,6 +7,16 @@
 </head>
 <body>
     <h1>Ruhul's Portfolio</h1>
+
+    {% load static %}
+
+    <a href="{% url 'blog:all_blogs' %}">Blog</a>
+    <br>
+    <a href="{% static 'portfolio/resume.png' %}">Resume</a>
+    <br>
+    <img width="250" src="{% static 'portfolio/ruhul-amin.png' %}" alt="Profile">
+    
+
     {%  for  project in projects %}
      
     <img width="250" src="{{ project.image.url }}">
