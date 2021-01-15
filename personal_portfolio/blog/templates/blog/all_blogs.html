@@ -1,20 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruhul's Blog</title>
-</head>
-<body>
-    <h2>Ruhul has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h2>
+{% extends "portfolio/base.html" %}
 
-    {% for blog in blogs %}
+{% load static %}
 
-    <a href="{% url 'blog:detail' blog.id %}"><h2>{{ blog.title }}</h2></a>
-    <h5>{{ blog.date|date:'M d Y'|upper }} </h5>
-    <p>{{ blog.description|striptags|truncatechars:100 }} </p>
-   
+{% block content %}
 
-    {% endfor %}
-</body>
-</html>
+<h1 id="blogtitle" class="font-weight-bold text-center">Blog</h1>
+
+<h3 class="text-center mb-5">Ruhul Amin Parvez has written {{ blogs.count }} blog{{ blogs.count|pluralize }}</h3>
+
+{% for blog in blogs %}
+<div class="row justify-content-center my-3">
+  <div class="col-md-10">
+    <a href="{% url 'blog:detail' blog.id %}">
+      <h2>{{ blog.title }}</h2>
+    </a>
+    <h5 class="text-muted">{{ blog.date|date:'M d Y'|upper }}</h5>
+    <h4>{{ blog.description|striptags|truncatechars:100 }}</h4>
+  </div>
+</div>
+{% endfor %}
+
+{% endblock %}

@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Detail</title>
-</head>
-<body>
+{% extends "portfolio/base.html" %}
 
-    <h1> {{ id.title }} </h1>
-    <h3> {{ id.date|date:'F jS Y' }} </h3>
-    <p> {{ id.description }} </p>
-</body>
-</html>
+{% load static %}
+
+{% block content %}
+
+<h1 class="text-center mt-5" id="blogdetailtitle">{{ id.title }}</h1>
+
+<h5 class="text-center text-muted mb-5">{{ id.date|date:'F jS Y' }}</h5>
+
+{{ id.description|safe }}
+
+{% endblock %}

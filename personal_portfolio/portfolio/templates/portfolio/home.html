@@ -1,30 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruhul's Portfolio</title>
-</head>
-<body>
-    <h1>Ruhul's Portfolio</h1>
+{% extends "portfolio/base.html" %}
 
-    {% load static %}
+{% load static %}
 
-    <a href="{% url 'blog:all_blogs' %}">Blog</a>
-    <br>
-    <a href="{% static 'portfolio/resume.png' %}">Resume</a>
-    <br>
-    <img width="250" src="{% static 'portfolio/ruhul-amin.png' %}" alt="Profile">
-    
+{% block content %}
 
-    {%  for  project in projects %}
-     
-    <img width="250" src="{{ project.image.url }}">
+<div class="row justify-content-center my-3">
+  <div class="col-5">
+    <img src="{% static 'portfolio/ruhul-amin.jpg' %}" class="img-fluid">
+  </div>
+</div>
+
+<div class="row justify-content-center mb-3">
+  <div class="col-md-9 text-center">
+    <h1 id="hometext" class="font-weight">Hey, I'm Ruhul Amin Parvez.A Python Django Developer and lives in Dhaka 😊</h1>
+  </div>
+</div>
+
+<h2 class="mt-5">Projects</h2>
+<hr>
+<div class="row">
+  {% for project in projects %}
+  <div class="col-lg-4 col-md-6">
+
     {% if project.url %}
-    <a href="{{ project.url }}">Link</a>
+    <a href="{{ project.url }}">
+      <img src="{{ project.image.url }}" class="img-fluid mb-2">
+    </a>
+    {% else %}
+
+    <img src="{{ project.image.url }}" class="img-fluid mb-2">
     {% endif %}
-    <h1>{{ project.title }}</h1>
-    <p>{{ project.description}}</p>
-    {% endfor %}
-</body>
-</html>
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.description }}</p>
+
+  </div>
+  {% endfor %}
+</div>
+
+{% endblock %}
