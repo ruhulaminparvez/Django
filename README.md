@@ -3,6 +3,9 @@ Django 3 Full Stack Websites with Python Web Development ❄🗽
 
 - [Password Generator](#password-generator)
 - [Personal Portfolio](#personal-portfoilo)
+- [TODO Woo](#todo-woo
+
+In this repo, I'm uploading my few beginner level django projects.😊 
 
 ## Password Generator
 
