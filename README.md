@@ -3,9 +3,9 @@ Django 3 Full Stack Websites with Python Web Development ❄🗽
 
 - [Password Generator](#password-generator)
 - [Personal Portfolio](#personal-portfoilo)
-- [TODO Woo](#todo-woo
+- [TODO Woo](#todo-woo)
 
-In this repo, I'm uploading my few beginner level django projects.😊 
+In this repo, I'm uploading my few beginner levels Django projects. 😊 
 
 ## Password Generator
 
@@ -26,3 +26,5 @@ A Simple **Personal Portfolio** website that driven by databases.
 ## TODO Woo
 
 A Simple **TODO Woo** Website that driven by databases.It's a list of tasks you need to complete, or things that you want to do. Most typically, they're organised in order of priority. Traditionally, they're written on a piece of paper or post it notes and acts as a memory aid.
+
+#### Preview 👇
