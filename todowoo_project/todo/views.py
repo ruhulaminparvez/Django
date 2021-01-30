@@ -2,7 +2,10 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 from django.db import IntegrityError
-from django.contrib.auth import login
+from django.contrib.auth import login, logout
+
+def home(request):
+    return render(request, 'todo/home.html')
 
 # Create your views here.
 def signupuser(request):
@@ -23,4 +26,11 @@ def signupuser(request):
             return render(request, 'todo/signupuser.html', {'form':UserCreationForm(), 'error':'Passwords did not match'})
 
 def currenttodos(request):
-    return render(request, 'todo/currenttodos.html')
+    return render(request, 'tosdo/currenttodos.html')
+
+def logoutuser(request):
+    if request.method == 'POST':
+        logout(request)
+        return redirect('home')
+    
+   
