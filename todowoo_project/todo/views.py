@@ -7,7 +7,6 @@ from django.contrib.auth import login, logout, authenticate
 def home(request):
     return render(request, 'todo/home.html')
 
-# Create your views here.
 def signupuser(request):
     if request.method == 'GET':
         return render(request, 'todo/signupuser.html', {'form':UserCreationForm()})

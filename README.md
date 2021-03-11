@@ -29,4 +29,3 @@ A Simple **TODO Woo** Website that driven by databases.It's a list of tasks you 
 
 #### Preview 👇
 
-<img width="650" src="https://github.com/Ruhul12/Django/blob/main/gif_previews/portfolio.gif">
