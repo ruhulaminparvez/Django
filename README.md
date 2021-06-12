@@ -11,6 +11,10 @@ In this repo, I'm uploading my few beginner levels Django projects. 😊
 
 A simple **Password Generator** website, which creates random passwords based on various conditions.
 
+#### LIVE Preview 👇
+
+<a href="https://password-generator-34934.herokuapp.com/" target="_blank">CLICK HERE FOR LIVE PREVIEW</a>
+
 #### Preview 👇
 
 <img width="650" src="https://github.com/Ruhul12/Django/blob/main/gif_previews/password_generator.gif">
