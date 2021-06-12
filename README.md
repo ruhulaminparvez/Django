@@ -13,7 +13,7 @@ A simple **Password Generator** website, which creates random passwords based on
 
 #### LIVE Preview 👇
 
-<a href="https://password-generator-34934.herokuapp.com/" target="_blank">CLICK HERE FOR LIVE PREVIEW</a>
+<p>Check out <a href="https://password-generator-34934.herokuapp.com/" target="_blank" rel="password generator">Password Generator</a></p>
 
 #### Preview 👇
 
