@@ -11,7 +11,7 @@ In this repo, I'm uploading my few beginner levels Django projects. 😊
 
 A simple **Password Generator** website, which creates random passwords based on various conditions.
 
-#### LIVE Preview 👇
+#### LIVE Demonstration 👇
 
 <p>Check out <a href="https://password-generator-34934.herokuapp.com/" target="_blank" rel="password generator">Password Generator</a></p>
 
